@@ -1,0 +1,20 @@
+schema_version = "1.0.0"
+
+id = "claude_blender"
+version = "1.0.0"
+name = "Claude for Blender"
+tagline = "MCP server and chat panel for working with Claude"
+maintainer = "atharv-santosh"
+type = "add-on"
+website = "https://github.com/atharv-santosh/claude-blender"
+tags = ["User Interface", "Modeling", "Lighting"]
+
+blender_version_min = "4.2.0"
+license = ["SPDX:MIT"]
+
+[permissions]
+network = "Downloads HDRIs from Poly Haven when asked"
+files = "Saves renders, checkpoints and the tool schema cache"
+
+[build]
+paths_exclude_pattern = ["__pycache__/", "*.pyc"]
